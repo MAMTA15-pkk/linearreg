@@ -1,0 +1,18 @@
+!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        
+    </head>
+    <body>
+        <h1>linear regression demo</h1>
+        <form action="{{url_for('predict')}}" method="post">
+            <input type="text" name="yearof exp" placeholder="exp" required="required">
+            <input type="text" name="salary" placeholder="sal" required="required">
+            
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+        <br>
+        <br>
+        {{ prediction_text }}
+    </body>
+</html>
